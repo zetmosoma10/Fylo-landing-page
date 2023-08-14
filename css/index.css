@@ -100,3 +100,31 @@ p {
   color: hsl(224, 93%, 58%);
   border: 1px solid hsl(224, 93%, 58%);
 }
+
+.arrow-icon {
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  transition: all 0.3s;
+}
+.arrow-icon a {
+  margin-right: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  color: hsl(170, 45%, 43%);
+  transition: all 0.3s;
+}
+@media (min-width: 980px) {
+  .arrow-icon a {
+    font-size: 1.6rem;
+  }
+}
+.arrow-icon:hover {
+  border-bottom: 1px solid #72cabb;
+}
+.arrow-icon:hover a {
+  color: #72cabb;
+}
+.arrow-icon:hover img {
+  opacity: 0.8;
+}
