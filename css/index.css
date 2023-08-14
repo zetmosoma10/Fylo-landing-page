@@ -128,3 +128,34 @@ p {
 .arrow-icon:hover img {
   opacity: 0.8;
 }
+
+.btn, .btn-hero, .btn-callout {
+  background: hsl(224, 93%, 58%);
+  color: #fff;
+  border: 0;
+  width: 50%;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  padding: 1.2rem 0;
+  margin: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover, .btn-hero:hover, .btn-callout:hover {
+  background: #628af9;
+}
+
+.btn-callout {
+  font-size: 1rem;
+  border-radius: 1.5px;
+}
+@media (min-width: 980px) {
+  .btn-callout {
+    font-size: 1.4rem;
+  }
+}
+
+.btn-hero {
+  font-size: 1.4rem;
+  border-radius: 3.2px;
+}
