@@ -70,3 +70,33 @@ p {
     line-height: 24px;
   }
 }
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.3rem;
+}
+
+.icon-container {
+  border: 1px solid #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 100%;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #fff;
+}
+.icon-container .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-container:hover,
+.icon-container:focus {
+  color: hsl(224, 93%, 58%);
+  border: 1px solid hsl(224, 93%, 58%);
+}
