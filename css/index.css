@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
@@ -68,6 +68,111 @@ p {
   p {
     font-size: 1.7rem;
     line-height: 24px;
+  }
+}
+
+.grid {
+  display: grid;
+  align-content: center;
+  row-gap: 8rem;
+  padding: 5rem 4rem;
+}
+
+@media (min-width: 980px) {
+  .grid-1x2 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+  .grid-1x2 .feature__image {
+    order: 2;
+  }
+}
+
+@media (min-width: 980px) {
+  .grid-1x4 {
+    grid-template-columns: 1fr auto auto 1fr;
+  }
+}
+
+.grid {
+  display: grid;
+  align-content: center;
+  row-gap: 8rem;
+  padding: 5rem 4rem;
+}
+
+@media (min-width: 980px) {
+  .grid-1x2 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+  .grid-1x2 .feature__image {
+    order: 2;
+  }
+}
+
+@media (min-width: 980px) {
+  .grid-1x4 {
+    grid-template-columns: 1fr auto auto 1fr;
+  }
+}
+
+.feature {
+  background-image: url(../../images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+@media (min-width: 980px) {
+  .feature {
+    background-image: url(../../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+
+.feature__image img {
+  width: 100%;
+  height: auto;
+}
+
+.feature__content h2 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.feature__content .feature__content-text {
+  text-align: center;
+}
+.feature__content .arrow-icon {
+  margin-bottom: 4rem;
+}
+.feature__content .arrow-container {
+  display: flex;
+  justify-content: center;
+}
+.feature__content .card {
+  margin: 0 auto;
+}
+@media (min-width: 980px) {
+  .feature__content h2 {
+    font-size: 4rem;
+    line-height: 47px;
+    text-align: left;
+    margin-bottom: 3.8rem;
+  }
+  .feature__content .feature__content-text {
+    text-align: left;
+  }
+  .feature__content .arrow-icon {
+    margin-bottom: 4.5rem;
+  }
+  .feature__content .arrow-container {
+    display: flex;
+    justify-content: start;
+  }
+  .feature__content .card {
+    margin: 0;
   }
 }
 
@@ -192,8 +297,7 @@ input[type=email] {
 }
 
 .card {
-  width: 350px;
-  margin: 5rem;
+  max-width: 350px;
   padding: 2.6rem 3.2rem;
   border: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
