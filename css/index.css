@@ -176,6 +176,78 @@ p {
   }
 }
 
+.grid {
+  display: grid;
+  align-content: center;
+  row-gap: 8rem;
+  padding: 5rem 4rem;
+}
+
+@media (min-width: 980px) {
+  .grid-1x2 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+  .grid-1x2 .feature__image {
+    order: 2;
+  }
+}
+
+@media (min-width: 980px) {
+  .grid-1x4 {
+    grid-template-columns: 1fr auto auto 1fr;
+  }
+}
+
+.callout {
+  background: hsl(238, 22%, 44%);
+}
+.callout .grid {
+  row-gap: 2.4rem;
+  column-gap: 22rem;
+}
+
+.callout__content {
+  text-align: center;
+}
+.callout__content h2 {
+  font-size: 1.8rem;
+  line-height: 24px;
+  margin-bottom: 1.6rem;
+}
+.callout__content p {
+  font-size: 1.4rem;
+  line-height: 21px;
+}
+.callout__content h2,
+.callout__content p {
+  color: #fff;
+}
+@media (min-width: 980px) {
+  .callout__content {
+    text-align: left;
+  }
+  .callout__content h2 {
+    font-size: 3.2rem;
+    line-height: 48px;
+    margin-bottom: 1.7rem;
+  }
+  .callout__content p {
+    font-size: 1.6rem;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.callout__inputs {
+  padding: 0 3rem;
+}
+@media (min-width: 980px) {
+  .callout__inputs {
+    padding: 0;
+  }
+}
+
 .social {
   display: flex;
   align-items: center;
@@ -238,11 +310,10 @@ p {
   background: hsl(224, 93%, 58%);
   color: #fff;
   border: 0;
-  width: 50%;
+  width: 100%;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   padding: 1.2rem 0;
-  margin: 2rem;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -253,10 +324,13 @@ p {
 .btn-callout {
   font-size: 1rem;
   border-radius: 1.5px;
+  margin-top: 0.8rem;
 }
 @media (min-width: 980px) {
   .btn-callout {
     font-size: 1.4rem;
+    margin-top: 1.5rem;
+    width: 20rem;
   }
 }
 
