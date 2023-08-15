@@ -159,3 +159,34 @@ p {
   font-size: 1.4rem;
   border-radius: 3.2px;
 }
+
+::placeholder {
+  font-size: 1.2;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.47px;
+}
+@media (min-width: 980px) {
+  ::placeholder {
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+input[type=email] {
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  text-indent: 1.8rem;
+  padding: 1.3rem 0;
+  border: 1px solid hsl(243, 87%, 12%);
+  border-radius: 3.2px;
+  width: 100%;
+  outline: 0;
+  color: hsl(243, 87%, 12%);
+}
+
+.error-text {
+  display: none;
+  font-size: 1.2rem;
+  color: #ef4877;
+  margin-top: 5px;
+}
