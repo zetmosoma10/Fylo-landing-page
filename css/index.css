@@ -319,6 +319,7 @@ p {
   padding: 1.2rem 0;
   cursor: pointer;
   transition: all 0.3s;
+  outline: none;
 }
 .btn:hover, .btn-hero:hover, .btn-callout:hover {
   background: #628af9;
