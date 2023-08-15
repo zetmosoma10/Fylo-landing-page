@@ -90,7 +90,7 @@ p {
 
 @media (min-width: 980px) {
   .grid-1x4 {
-    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
   }
 }
 
@@ -113,7 +113,7 @@ p {
 
 @media (min-width: 980px) {
   .grid-1x4 {
-    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
   }
 }
 
@@ -195,7 +195,7 @@ p {
 
 @media (min-width: 980px) {
   .grid-1x4 {
-    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
   }
 }
 
@@ -469,7 +469,7 @@ nav ul a:hover, nav ul a:focus {
 
 @media (min-width: 980px) {
   .grid-1x4 {
-    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
   }
 }
 
@@ -510,4 +510,82 @@ nav ul a:hover, nav ul a:focus {
   .hero__content .hero__inputs {
     display: flex;
   }
+}
+
+.grid {
+  display: grid;
+  align-content: center;
+  row-gap: 8rem;
+  padding: 5rem 4rem;
+}
+
+@media (min-width: 980px) {
+  .grid-1x2 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+  .grid-1x2 .feature__image {
+    order: 2;
+  }
+}
+
+@media (min-width: 980px) {
+  .grid-1x4 {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  }
+}
+
+.footer {
+  background: hsl(243, 87%, 12%);
+  padding-top: 6rem;
+}
+.footer a {
+  color: #fff;
+  display: block;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.3s;
+  margin-bottom: 1.6rem;
+}
+.footer a:hover {
+  color: hsl(224, 93%, 58%);
+}
+.footer .grid {
+  row-gap: 3.2rem;
+}
+.footer .grid-1x4 {
+  padding: 1.8rem 3rem 1.8rem;
+}
+@media (min-width: 980px) {
+  .footer {
+    padding-top: 7.5rem;
+  }
+  .footer .grid-1x4 {
+    padding: 2rem 0 3.6rem;
+  }
+  .footer .grid-1x4 .social {
+    justify-self: start;
+    align-items: start;
+  }
+}
+
+.footer__logo {
+  filter: grayscale(1) brightness(50);
+  margin-left: 3rem;
+}
+@media (min-width: 980px) {
+  .footer__logo {
+    margin-left: 0;
+  }
+}
+
+.footer__contacts p {
+  color: #fff;
+  margin-bottom: 0;
+  margin-left: 1.2rem;
+}
+.footer__contacts .footer__contacts-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
 }
