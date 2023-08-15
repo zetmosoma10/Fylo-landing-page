@@ -190,3 +190,38 @@ input[type=email] {
   color: #ef4877;
   margin-top: 5px;
 }
+
+.card {
+  width: 350px;
+  margin: 5rem;
+  padding: 2.6rem 3.2rem;
+  border: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card p {
+  font-size: 1.3rem;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.6rem;
+}
+.card .card__profile-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+.card__profile {
+  display: flex;
+  align-items: center;
+}
+
+.card__profile-name {
+  display: block;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.card__profile-company {
+  font-size: 0.8rem;
+}
