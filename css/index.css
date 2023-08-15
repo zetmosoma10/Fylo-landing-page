@@ -403,3 +403,41 @@ input[type=email] {
 .card__profile-company {
   font-size: 0.8rem;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+nav a img {
+  width: 80px;
+}
+@media (min-width: 980px) {
+  nav a img {
+    width: 166px;
+  }
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 0 1.5rem;
+  list-style: none;
+}
+nav ul a {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.3s;
+}
+nav ul a:hover, nav ul a:focus {
+  color: black;
+}
+@media (min-width: 980px) {
+  nav ul li {
+    margin: 0 3.5rem;
+  }
+  nav ul a {
+    font-size: 1.6rem;
+  }
+}
