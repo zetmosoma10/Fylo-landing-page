@@ -1,19 +1,19 @@
-const input = document.getElementById("input");
-const errorText = document.getElementById("error-text");
+const input = document.getElementById("email");
+const errorText = document.getElementById("errorText");
 
-// input.addEventListener("input", function () {
-//   input.classList.remove("invalid");
-//   errorText.style.display = "block";
-// });
+input.addEventListener("blur", () => {
+  const isValidEmail = isValidEmailAddress(input.value);
 
-// input.addEventListener("blur", function () {
-//   if (!input.validity.valid) {
-//     // Remove styles
-//     errorText.style.display = "none";
-//     input.classList.remove("invalid");
-//     errorText.style.display = "block";
-//     input.classList.add("invalid");
-//   } else {
-//     // Add styles
-//   }
-// });
+  if (isValidEmail) {
+    input.classList.remove("error");
+    errorText.style.display = "none";
+  } else {
+    input.classList.add("error");
+    errorText.style.display = "block";
+  }
+});
+
+function isValidEmailAddress(email) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+}
