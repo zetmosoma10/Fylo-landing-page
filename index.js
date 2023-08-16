@@ -1,15 +1,34 @@
-const input = document.getElementById("email");
-const errorText = document.getElementById("errorText");
+const heroInput = document.getElementById("heroInput");
+const heroErrorText = document.getElementById("heroErrortext");
+const calloutInput = document.getElementById("calloutInput");
+const calloutErrorText = document.getElementById("calloutErrorText");
 
-input.addEventListener("blur", () => {
-  const isValidEmail = isValidEmailAddress(input.value);
+console.log(heroErrorText);
+console.log(heroInput);
+console.log(calloutErrorText);
+console.log(calloutInput);
+
+heroInput.addEventListener("blur", () => {
+  const isValidEmail = isValidEmailAddress(heroInput.value);
 
   if (isValidEmail) {
-    input.classList.remove("error");
-    errorText.style.display = "none";
+    heroInput.classList.remove("error");
+    heroErrorText.style.display = "none";
   } else {
-    input.classList.add("error");
-    errorText.style.display = "block";
+    heroInput.classList.add("error");
+    heroErrorText.style.display = "block";
+  }
+});
+
+calloutInput.addEventListener("blur", () => {
+  const isValidEmail = isValidEmailAddress(calloutInput.value);
+
+  if (isValidEmail) {
+    calloutInput.classList.remove("error");
+    calloutErrorText.style.display = "none";
+  } else {
+    calloutInput.classList.add("error");
+    calloutErrorText.style.display = "block";
   }
 });
 

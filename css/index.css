@@ -120,7 +120,7 @@ p {
 
 .feature {
   margin-top: 9rem;
-  background-image: url(../../images/bg-curve-mobile.svg);
+  background-image: url(../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -128,7 +128,7 @@ p {
 @media (min-width: 768px) {
   .feature {
     margin-top: 15rem;
-    background-image: url(../../images/bg-curve-desktop.svg);
+    background-image: url(../images/bg-curve-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -559,7 +559,7 @@ nav ul a:hover, nav ul a:focus {
   transition: all 0.3s;
   margin-bottom: 1.6rem;
 }
-.footer a:hover {
+.footer a:hover, .footer a:focus {
   color: hsl(224, 93%, 58%);
 }
 .footer .grid {
