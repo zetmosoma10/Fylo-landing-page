@@ -3,11 +3,6 @@ const heroErrorText = document.getElementById("heroErrortext");
 const calloutInput = document.getElementById("calloutInput");
 const calloutErrorText = document.getElementById("calloutErrorText");
 
-console.log(heroErrorText);
-console.log(heroInput);
-console.log(calloutErrorText);
-console.log(calloutInput);
-
 heroInput.addEventListener("blur", () => {
   const isValidEmail = isValidEmailAddress(heroInput.value);
 
